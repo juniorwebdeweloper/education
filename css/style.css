@@ -1,0 +1,235 @@
+/* css animation */
+@keyframes logo-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* font */
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/Roboto_regular.ttf");
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+	background: url(../images/background1.jpg) repeat;
+	color: #ffffff;
+	font-family: Roboto;
+}
+
+header {
+	width: 100%;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	width: 100px;
+	margin-right: 110px;
+	animation: logo-rotate infinite 15s linear;
+}
+
+.head-cont {
+	padding-top: 0px;
+}
+
+.head-menu {
+	float: left;
+	width: 444px;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+	line-height: 42px;
+}
+
+.main-menu li {
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.main-menu a {
+	display: block;
+	padding: 16px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-left: 2px solid #6340A4;
+}
+
+.main-menu a:hover {
+	background: #6340A0;
+}
+
+.login-form {
+	float: right;
+	width: 300px;
+	height: 100%;
+	text-align: right;
+	padding-top: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 120px;
+	border-radius: 6px;
+	padding: 6px;
+	box-shadow: inset 0px 0px 14px 1px #623FA3;
+	border: 0;
+}
+
+input[type="submit"] {
+	width: 70px;
+	margin-top: 4px;
+	border-radius: 8px;
+	padding: 4px;
+	background: #623FA2;
+	color: #ffffff;
+}
+
+.button-input:hover {
+	box-shadow: 0 0 20px #27FF24;
+}
+
+.sidebar {
+	float: left;
+	width: 16%;
+	height: 200px;
+	margin-top: 10px;
+}
+
+.sidebar-list {
+	width: 200px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+}
+
+.sidebar-list a {
+	border-bottom: 2px solid #6340A4;
+	padding: 16px 18px;
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.sidebar-list a:hover {
+	background: #6340A0;
+}
+
+.content {
+	float: left;
+	margin-top: 10px;
+	padding: 10px;
+	width: 60%;
+	height: 100%;
+}
+
+.cont-item {
+	float: left;
+	padding: 10px;
+}
+ 
+.content p {
+	padding: 5px;
+	text-indent: 30px;
+	text-align: justify;
+}
+
+.cont-item .wrap-img {
+	float: left;
+	width: 20%;
+}
+
+/*aside register form*/
+.register-form {
+	float: right;
+	margin-top: 10px;
+	width: 20%;
+	height: 300px;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+	padding-top: 20px;
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 14px;
+}
+
+/* footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	margin-top: 10px;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+}
+
+.footer-menu {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 35%;
+	margin-right: 170px;
+	margin-top: 15px;
+}
+
+.footer-menu li {
+	display: inline-block;
+}
+
+.footer-menu a {
+	display: block;
+	text-decoration: none;
+	padding: 14px 20px;
+	color: #ffffff;
+}
+
+.footer-menu a:hover {
+	text-decoration: underline;
+	color: #9696a2;
+}
+
+.share {
+	float: right;
+	width: 20%;
+	margin: 5px auto;
+	padding: 10px;
+	padding-top: 10px;
+	text-align: right;
+}
+
+.social {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.copyright {
+	float: left;
+	color: #9E9E9E;
+	width: 20%;
+	height: 20px;
+	margin-top: 20px;
+	padding: 10px 0;
+	text-align: center;
+}

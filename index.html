@@ -1,6 +1,98 @@
 <!DOCTYPE html>
 <head>
+	<meta charset="utf-8">
+	<title>My first page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<header class="clearfix">
+		<div class="container">
+		<div class="logo">
+			<a href="#"><img src="images/logo_react.png" alt="react"></a>
+		</div>
+		<div class="head-cont">
+		<nav>
+			<div class="head-menu">
+				<ul class="main-menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Info</a></li>
+					<li><a href="">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="login-form">
+			<form name="log" action="#" method="post">
+				<input class="text-input" type="text" placeholder="login"/>
+				<input class="password-input" type="password" placeholder="password"/>
+				<input class="button-input" type="submit" value="Login"/>
+			</form>
+		</div>
+		</div>
+		</div>
+	</header>
+	<main class="clearfix"> 
+		<div class="container">
+			<aside class="sidebar">
+				<ul class="sidebar-list">
+					<li><a href="">Test1</a></li>
+					<li><a href="">Test2</a></li>
+					<li><a href="">Test3</a></li>
+					<li><a href="">Test4</a></li>
+				</ul>
+			</aside>
+			<section class="content clearfix">
+				<div class="cont-item ">
+				<div class="wrap-img"><img src="images/html.png" alt="html5"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolor repudiandae quibusdam, ipsa, rem quisquam? Ullam ut culpa, architecto tempora dignissimos saepe officiis non voluptate, in, maiores odio rerum tempore.<p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia, in magnam obcaecati eveniet suscipit voluptas accusantium libero doloribus sapiente ullam autem repellendus, voluptatum dolores vero deleniti quia nesciunt ducimus.</p>
+				</div>
+				<div class="cont-item">
+					<div class="wrap-img"><img src="images/css.png" alt="css"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, laboriosam praesentium tempore blanditiis est reprehenderit eaque quas, explicabo sit maiores cum ipsam commodi sed, nulla. Labore vitae tempora, consectetur corporis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet pariatur blanditiis, accusantium id incidunt. Temporibus officia quisquam quidem placeat delectus nam quia! Laudantium accusamus dolorum suscipit, corporis iste quis, labore.</p>
+				</div>
+				<div class="cont-item">
+					<div class="wrap-img"><img src="images/js.png" alt="javascript"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis provident necessitatibus sit, architecto voluptas! Iusto nobis blanditiis, non sed, iure, eveniet debitis officia quas quaerat placeat iste sapiente, dignissimos eius.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga quia magnam quae reiciendis eveniet molestias architecto, reprehenderit. Ea id quasi quia, eos dolores placeat vero repudiandae minus voluptas sed.</p>
+				</div>
+			</section>
+			<aside class="register-form">
+				<form action="#" method="post">
+					<fieldset>
+						<label><p>Name</p><input type="text" placeholder="Name"></label>
+						<label><p>Login</p><input type="text" placeholder="Login"></label>
+						<label><p>Password</p><input type="password" placeholder="Password"></label>
+						<label><p>Repeat password</p><input type="password" placeholder="Repeat password" required></label>
+						<input class="button-input" type="submit" value="Register">
+					</fieldset>
+				</form>
+			</aside>
+		</div>
+	</main>
+	<footer class="clearfix">
+		<div class="container">
+			<div class="footer-menu">
+				<ul class="bottom-menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">Info</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="share">
+				<a class="social social-fb" href="https://www.facebook.com/" target="_blank"><img src="images/social_fb.png" alt="facebook" /></a>
+				<a class="social social-tw" href="https://twitter.com/" target="_blank"><img src="images/social_tw.png" alt="twitter" /></a>
+				<a class="social social-in" href="https://www.linkedin.com/" target="_blank"><img src="images/social_in.png" alt="linkedin" /></a>
+			</div>
+			<div class="copyright">
+				&copy; Zozulia Kirill - 2018
+			</div>
+		</div>
+	</footer>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
