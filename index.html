@@ -4,6 +4,7 @@
 	<title>My first page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
 	<link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -25,11 +26,16 @@
 		</nav>
 		<div class="login-form">
 			<form name="log" action="#" method="post">
+			<div class="log">
 				<input class="text-input" type="text" placeholder="login"/>
+			</div>
+			<div class="log">
 				<input class="password-input" type="password" placeholder="password"/>
-				<input class="button-input" type="submit" value="Login"/>
+			</div>
+			<div class="sbm">
+				<input class="sbm-input" type="submit" value="Login"/>
+			</div>
 			</form>
-		</div>
 		</div>
 		</div>
 	</header>
@@ -37,40 +43,48 @@
 		<div class="container">
 			<aside class="sidebar">
 				<ul class="sidebar-list">
-					<li><a href="">Test1</a></li>
-					<li><a href="">Test2</a></li>
-					<li><a href="">Test3</a></li>
-					<li><a href="">Test4</a></li>
+					<li><a href="">HTML5</a></li>
+					<li><a href="">CSS3</a></li>
+					<li><a href="">Javascript</a></li>
+					<li><a href="">React.js</a></li>
+					<li><a href="">Vue.js</a></li>
+					<li><a href="">Angular</a></li>
 				</ul>
 			</aside>
 			<section class="content clearfix">
 				<div class="cont-item ">
 				<div class="wrap-img"><img src="images/html.png" alt="html5"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolor repudiandae quibusdam, ipsa, rem quisquam? Ullam ut culpa, architecto tempora dignissimos saepe officiis non voluptate, in, maiores odio rerum tempore.<p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia, in magnam obcaecati eveniet suscipit voluptas accusantium libero doloribus sapiente ullam autem repellendus, voluptatum dolores vero deleniti quia nesciunt ducimus.</p>
+					<p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.<p>
+					<p>It was published in October 2014 by the World Wide Web Consortium (W3C)to improve the language with support for the latest multimedia, while keeping it both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc. HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2</p>
+					<p>HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications. For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.</p>
 				</div>
 				<div class="cont-item">
 					<div class="wrap-img"><img src="images/css.png" alt="css"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, laboriosam praesentium tempore blanditiis est reprehenderit eaque quas, explicabo sit maiores cum ipsam commodi sed, nulla. Labore vitae tempora, consectetur corporis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet pariatur blanditiis, accusantium id incidunt. Temporibus officia quisquam quidem placeat delectus nam quia! Laudantium accusamus dolorum suscipit, corporis iste quis, labore.</p>
+					<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+					<p>CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
 				</div>
 				<div class="cont-item">
 					<div class="wrap-img"><img src="images/js.png" alt="javascript"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis provident necessitatibus sit, architecto voluptas! Iusto nobis blanditiis, non sed, iure, eveniet debitis officia quas quaerat placeat iste sapiente, dignissimos eius.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fuga quia magnam quae reiciendis eveniet molestias architecto, reprehenderit. Ea id quasi quia, eos dolores placeat vero repudiandae minus voluptas sed.</p>
+					<p>JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.</p>
+					<p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles.</p>
 				</div>
 			</section>
-			<aside class="register-form">
-				<form action="#" method="post">
-					<fieldset>
-						<label><p>Name</p><input type="text" placeholder="Name"></label>
-						<label><p>Login</p><input type="text" placeholder="Login"></label>
-						<label><p>Password</p><input type="password" placeholder="Password"></label>
-						<label><p>Repeat password</p><input type="password" placeholder="Repeat password" required></label>
-						<input class="button-input" type="submit" value="Register">
-					</fieldset>
-				</form>
-			</aside>
+			<div class="reg-form">
+			<img src="images/man.png">
+			<form>
+		<div class="text-input">
+				<input type="text" name="username" placeholder="Enter login">
+			</div>
+			<div class="text-input">
+				<input type="text" name="username" placeholder="Enter email">
+			</div>
+		<div class="text-input">
+				<input type="password" name="password" placeholder="Enter password">
+		</div>
+			<input class="sbm-input" type="submit" name="submit" value="REGISTER"><br />
+			<a href="#">Restore password</a>
+			</form>
+		</div>
 		</div>
 	</main>
 	<footer class="clearfix">
@@ -93,6 +107,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/common.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
