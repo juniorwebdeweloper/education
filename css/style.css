@@ -4,12 +4,6 @@
   to { transform: rotate(360deg); }
 }
 
-/* font */
-@font-face {
-	font-family: Roboto;
-	src: url("../fonts/Roboto_regular.ttf");
-}
-
 .clearfix:after {
 	content: "";
 	display: block;
@@ -72,7 +66,9 @@ header {
 }
 
 .main-menu a:hover {
-	background: #6340A0;
+	transition: all 0.5s;
+ 	background: #fff;
+ 	color: #2c536c;
 }
 
 /*login form*/
@@ -135,13 +131,137 @@ input:hover{
 }
 
 .sidebar-list a:hover {
-	background: #6340A0;
+	transition: all 0.5s;
+ 	background: #fff;
+ 	color: #2c536c;
+}
+
+/*control panel*/
+#cPanel {
+	width: 78%;
+	padding: 18px 18px 0 18px;
+	margin-top: 30px;
+	border-bottom: 2px solid #6340A4;
+	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
+}
+
+/* burger button */
+#burger {
+	padding: 2px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+#burger span {
+	display: block;
+	width: 18px;
+	height: 3px;
+	margin-bottom: 3px;
+	background-color: #fff;
+	transition: .6s;
+}
+
+#burger span:last-child {
+	margin-bottom: 0;
+}
+
+#burger span.active-btn:first-child {
+	transform: skewY(45deg) translateY(5px);
+}
+
+#burger span.active-btn:nth-child(2) {
+	opacity: 0;
+}
+
+#burger span.active-btn:last-child {
+	transform: skewY(-45deg) translateY(-6px);
+}
+
+/* h3 style */
+.h3-cp {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-size: 18px;
+}
+
+.h3-mb {
+	margin-bottom: 12px;
+	font-size: 18px;
+}
+
+/* style of control panel */
+#cPcont {
+	height: 0;
+	transition: 1s;
+	overflow: hidden;
+}
+
+#cPanel .active {
+	padding-top: 5px;
+	height: 520px;
+	opacity: 1;
+}
+
+#cPcont .font-change {
+	width: 154px;
+	height: 25px;
+	margin-top: 5px;
+	font-size: 16px;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+.color-input {
+	margin-bottom: 5px;
+}
+
+.change,
+.delete {
+	padding: 8px 20px;
+ 	margin: 5px 0 5px 0;
+ 	font-size: 15px;
+ 	color: #fff;
+ 	background-color: #2ca8c6;
+ 	border: none;
+ 	border-bottom: 4px solid #6ee9fd;
+ 	cursor: pointer;
+}
+
+.change:hover,
+.delete:hover{
+ 	transition: all 0.5s;
+ 	background: #fff;
+ 	color: #2c536c;
+ 	border-radius: 10px;
+}
+
+.color-input {
+	width: 86px;
+	outline: none;
+	border-radius: 10px;
+}
+
+.radio {
+	display: block;
+}
+
+.radio-text{
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type="radio"]:hover {
+	box-shadow: none;
+	outline: none;
 }
 
 /*content*/
 .content {
 	float: left;
 	margin-top: 10px;
+	margin-bottom: 50px;
 	padding: 10px;
 	width: 55%;
 	height: 100%;
@@ -220,10 +340,10 @@ input[type="text"],input[type="password"]{
  	transition: all 0.5s;
  	background: #fff;
  	color: #2c536c;
+ 	border-radius: 10px;
 }
 
 .text-input::before{
- 	font-family: "FontAwesome";
  	position: absolute;
  	font-size: 30px;
  	padding: 10px 0 0 7px;
@@ -272,8 +392,8 @@ footer {
 .share {
 	float: right;
 	width: 20%;
-	padding: 10px;
-	padding-top: 5px;
+	padding: 8px;
+	padding-top: 8px;
 	text-align: right;
 }
 

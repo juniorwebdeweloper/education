@@ -20,6 +20,10 @@
 		input {
 			box-sizing: border-box;
 		}
+
+		#cPanel {
+			width: 89%;
+		}
 }
 
 /* Medium Devices, Desktops */
@@ -84,6 +88,14 @@
 
 			.copyright {
 				width: 21%;
+			}
+
+			.h3-cp {
+				font-size: 14px;
+			}
+
+			#cPanel {
+				width: 77%;
 			}
 }
 

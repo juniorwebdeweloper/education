@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
 	<link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -52,6 +53,42 @@
 					<li><a href="">Vue.js</a></li>
 					<li><a href="">Angular</a></li>
 				</ul>
+				<div id="cPanel">
+						<!--<i class="fas fa-bars" id="burger"></i>-->
+						<button id="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					<h3 class="h3-cp">Control panel</h3>
+					<div id="cPcont">
+						<h3 class="h3-mb">Font size changer</h3>
+						<input type="text" class="font-change" placeholder="From 8px to 24px" />
+						<input type="submit" class="change" value="Change" id="ch1"/>
+						<hr>
+						<h3 class="h3-mb">Bg-Color changer</h3>
+						<input type="color" class="color-input" />
+						<p><input type="submit" class="change" value="Change" id="ch2"/></p>
+						<hr>
+						<h3 class="h3-mb">Font changer</h3>
+						<label class="radio">
+							<input name="font" type="radio" value="Roboto" id="f1" class="r_button"/>
+							<div class="radio-text">Roboto regular</div>
+						</label>
+						<label class="radio">
+							<input name="font" type="radio" value="Nautilus Pompilius" id="f2" class="r_button"/>
+							<div class="radio-text">Nautilus Pompilius</div>
+						</label>
+						<label class="radio">
+							<input name="font" type="radio" value="Beer money" id="f3" class="r_button"/>
+							<div class="radio-text">Beer money</div>
+						</label>
+						<input type="submit" value="Change" class="change" id="ch3" class="r_button"/>
+						<hr>
+						<h3 class="h3-mb">Delete last paragraph</h3>
+						<input type="submit" value="Delete &#60;p&#62;" class="delete" id="del"/>
+					</div>
+				</div>
 			</aside>
 			<section class="content clearfix">
 				<div class="cont-item ">
@@ -91,6 +128,7 @@
 	</main>
 	<footer class="clearfix">
 		<div class="container">
+			<nav>
 			<div class="footer-menu">
 				<ul class="bottom-menu">
 					<li><a href="">Home</a></li>
@@ -99,6 +137,7 @@
 					<li><a href="">Contacts</a></li>
 				</ul>
 			</div>
+			</nav>
 			<div class="share">
 				<a class="social social-fb" href="https://www.facebook.com/" target="_blank"><img src="images/social_fb.png" alt="facebook" /></a>
 				<a class="social social-tw" href="https://twitter.com/" target="_blank"><img src="images/social_tw.png" alt="twitter" /></a>
@@ -109,5 +148,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
