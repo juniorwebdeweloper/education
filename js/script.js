@@ -1,21 +1,11 @@
+//hamburger menu
 var cont = document.getElementById('cPcont');
 var span = document.getElementById('burger').getElementsByTagName('span');
 var btn = document.getElementById('burger');
-var changeF = document.getElementById('ch1');
-var changeC = document.getElementById('ch2');
-var delP = document.getElementById('del').onclick = (() => deleteParagraph());
-var changeFF = document.getElementById('ch3');
-var inputFont = document.querySelector('.font-change').oninput = function() {changeFont();};
-var inputColor = document.querySelector('.color-input').oninput = function() {changeColor();};
-var radioFont = document.querySelectorAll('.r_button');
-		for (var i = 0; i < radioFont.length; i++) {
-			radioFont[i].onchange = () => changeFontFamily(); 
-		};
 
-		btn.onclick = function() {
+btn.onclick = function() {
 		slideMenu();
 		};
-
 
 function slideMenu() {
 	cont.classList.toggle('active');
@@ -23,6 +13,10 @@ function slideMenu() {
 		span[i].classList.toggle('active-btn');
 	}
 }
+
+//change font size
+var changeF = document.getElementById('ch1');
+var inputFont = document.querySelector('.font-change').oninput = function() {changeFont();};
 
 function changeFont(e) {
 	var currentValue = event.target.value;
@@ -38,6 +32,10 @@ function changeFont(e) {
 	}
 }
 
+//change background color
+var changeC = document.getElementById('ch2');
+var inputColor = document.querySelector('.color-input').oninput = function() {changeColor();};
+
 function changeColor(e) {
 	var currentValue = event.target.value;
 	changeC.onclick = function () {
@@ -47,10 +45,13 @@ function changeColor(e) {
 	}
 }
 
-function deleteParagraph() { 
-	let pElements = document.getElementsByTagName('p');
-	pElements[pElements.length -1].remove();
-}
+//change font family
+const FONTS = ['Roboto', 'Nautilus Pompilius', 'Beer money'];
+var changeFF = document.getElementById('ch3');
+var radioFont = document.querySelectorAll('.r_button');
+		for (var i = 0; i < radioFont.length; i++) {
+			radioFont[i].onchange = () => changeFontFamily(); 
+		};
 
 function changeFontFamily(e) {
 	var currentValue = event.target;
@@ -64,4 +65,10 @@ function changeFontFamily(e) {
 	}
 }
 
-const FONTS = ['Roboto', 'Nautilus Pompilius', 'Beer money'];
+//delete paragraph
+var delP = document.getElementById('del').onclick = (() => deleteParagraph());
+
+function deleteParagraph() { 
+	let pElements = document.getElementsByTagName('p');
+	pElements[pElements.length -1].remove();
+}
