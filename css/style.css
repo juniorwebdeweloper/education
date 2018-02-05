@@ -18,6 +18,7 @@ body {
 }
 
 header {
+	width: 100%;
 	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
 }
 
@@ -289,7 +290,7 @@ input[type="radio"]:hover {
 }
 
 /* register form */
-.reg-form{
+.reg-form {
 	float: right;
  	width: 25%;
  	background: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));

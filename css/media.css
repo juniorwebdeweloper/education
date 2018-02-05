@@ -41,15 +41,36 @@
 			}
 
 			.logo {
-				margin-right: 20px;
+				margin-right: 25px;
 			}
 
 			.login-form {
 				width: 34%;
+				position: relative;
 			}
 
-			.sbm {
+			.sbm,
+			.log {
 				display: block;
+			}
+
+			.log .text-input {
+				position: absolute;
+				top: 5px;
+				left: 34px;
+			}
+
+			.log .password-input {
+				position: absolute;
+				top: 40px;
+				left: 34px;
+			}
+
+			.sbm  {
+					position: absolute;
+					top: 22px;
+					right: 0;
+					margin: 0;
 			}
 
 			.sidebar {
@@ -91,22 +112,437 @@
 			}
 
 			.h3-cp {
+				font-size: 15px;
+			}
+
+			.h3-mb {
+				font-size: 15px;
+			}
+
+			.radio-text {
 				font-size: 14px;
 			}
 
 			#cPanel {
 				width: 77%;
 			}
+
+			#cPanel .active {
+				height: 550px;
+			}
+
+			#cPcont .font-change {
+				width: 112px;
+				font-size: 12px;
+			}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+
+			.login-form {
+				position: relative;
+			}
+
+			.log {
+				display: block;
+			}
+
+			.log .text-input {
+				position: absolute;
+				top: 5px;
+				left: 22px;
+			}
+
+			.log .password-input {
+				position: absolute;
+				top: 40px;
+				left: 22px;
+			}
+
+			.sbm  {
+					position: absolute;
+					top: 22px;
+					right: 10px;
+					margin: 0;
+			}
+}
+
+/*mod*/
+@media only screen and (max-width : 767px) {
+			.container{
+				width: 480px;
+			}
+
+			.reg-form {
+					float: none;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+					margin-bottom: 30px;
+				}
+
+			.content {
+					float: none;
+					width: 95%;
+				}
+
+			.logo {
+					margin: 0;
+				}
+
+			header {
+					height: 70px;
+				}
+
+			.head-menu {
+					width: 264px;
+					margin: 0;
+				}
+
+			.main-menu a {
+					font-size: 12px;
+					padding: 14px 9px;
+				}
+
+			.login-form {
+				position: relative;
+				float: right;
+				margin: 0;
+				padding: 0;
+				width: 116px;
+			}
+
+			.log {
+				display: block;
+			}
+
+			.log .text-input {
+				position: absolute;
+				top: 1px;
+				left: 22px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.log .password-input {
+				position: absolute;
+				top: 24px;
+				left: 22px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.sbm  {
+					position: absolute;
+					top: 38px;
+					right: 8px;
+					margin: 0;
+			}
+
+			.sbm .sbm-input {
+				padding: 2px 14px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.sidebar {
+				margin-top: 10px;
+				font-size: 14px;
+				width: 100%;
+			}
+
+			.sidebar-list a {
+				padding: 12px 13.9px;
+				border-bottom: none;
+				border-left: 2px solid #6340A4;
+			}
+			
+			.sidebar-list li {
+				display: inline-block;
+			}
+
+			#cPanel {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				padding: 12px 14px 0 14px;
+			}
+
+				/* h3 style */
+				.h3-cp {
+					display: inline-block;
+					margin-bottom: 18px;
+					font-size: 16px;
+				}
+
+				.h3-mb {
+					margin-bottom: 12px;
+					font-size: 16px;
+				}
+
+				/* style of control panel */
+
+				#cPanel .active {
+					padding-top: 5px;
+					height: 470px;
+					opacity: 1;
+				}
+
+				#cPcont .font-change {
+					width: 154px;
+					height: 30px;
+					font-size: 16px;
+					padding-left: 5px;
+				}
+
+				.color-input {
+					margin-bottom: 5px;
+				}
+
+				.change {
+					width: 113px;
+					display: block;
+				}
+
+				.change,
+				.delete {
+					padding: 8px 20px;
+				 	margin: 5px 0;
+				 	font-size: 15px;
+				 	color: #fff;
+				 	background-color: #2ca8c6;
+				 	border: none;
+				 	border-bottom: 4px solid #6ee9fd;
+				 	cursor: pointer;
+				}
+
+			.footer-menu {
+				margin-top: 4px;
+				font-size: 12px;
+				width: 40%;
+				margin-right: 6%;
+			}
+			
+			.footer-menu a {
+				padding: 8px 4px;
+			}
+
+			.copyright {
+				font-size: 12px;
+				width: 25%;
+				margin: 0;
+				padding: 0;
+				padding-top: 12px;
+			}
+
+			.social {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				vertical-align: middle;
+				}
+
+				.share {
+					float: right;
+					width: 25%;
+					padding: 8px;
+					padding-top: 8px;
+					text-align: right;
+				}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+			
+			.container{
+				width: 480px;
+			}
 
+			.reg-form {
+					float: none;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+					margin-bottom: 30px;
+				}
+
+			.content {
+					float: none;
+					width: 95%;
+				}
+
+			.logo {
+					margin: 0;
+				}
+
+			header {
+					height: 70px;
+				}
+
+			.head-menu {
+					width: 264px;
+					margin: 0;
+				}
+
+			.main-menu a {
+					font-size: 12px;
+					padding: 14px 9px;
+				}
+
+			.login-form {
+				position: relative;
+				float: right;
+				margin: 0;
+				padding: 0;
+				width: 116px;
+			}
+
+			.log {
+				display: block;
+			}
+
+			.log .text-input {
+				position: absolute;
+				top: 1px;
+				left: 22px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.log .password-input {
+				position: absolute;
+				top: 24px;
+				left: 22px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.sbm  {
+					position: absolute;
+					top: 38px;
+					right: 8px;
+					margin: 0;
+			}
+
+			.sbm .sbm-input {
+				padding: 2px 14px;
+				width: 80px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			.sidebar {
+				margin-top: 10px;
+				font-size: 14px;
+				width: 100%;
+			}
+
+			.sidebar-list a {
+				padding: 12px 13.9px;
+				border-bottom: none;
+				border-left: 2px solid #6340A4;
+			}
+			
+			.sidebar-list li {
+				display: inline-block;
+			}
+
+			#cPanel {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				padding: 12px 14px 0 14px;
+			}
+
+				/* h3 style */
+				.h3-cp {
+					display: inline-block;
+					margin-bottom: 18px;
+					font-size: 16px;
+				}
+
+				.h3-mb {
+					margin-bottom: 12px;
+					font-size: 16px;
+				}
+
+				/* style of control panel */
+
+				#cPanel .active {
+					padding-top: 5px;
+					height: 470px;
+					opacity: 1;
+				}
+
+				#cPcont .font-change {
+					width: 154px;
+					height: 30px;
+					font-size: 16px;
+					padding-left: 5px;
+				}
+
+				.color-input {
+					margin-bottom: 5px;
+				}
+
+				.change {
+					width: 113px;
+					display: block;
+				}
+
+				.change,
+				.delete {
+					padding: 8px 20px;
+				 	margin: 5px 0;
+				 	font-size: 15px;
+				 	color: #fff;
+				 	background-color: #2ca8c6;
+				 	border: none;
+				 	border-bottom: 4px solid #6ee9fd;
+				 	cursor: pointer;
+				}
+
+			.footer-menu {
+				margin-top: 4px;
+				font-size: 12px;
+				width: 40%;
+				margin-right: 6%;
+			}
+			
+			.footer-menu a {
+				padding: 8px 4px;
+			}
+
+			.copyright {
+				font-size: 12px;
+				width: 25%;
+				margin: 0;
+				padding: 0;
+				padding-top: 12px;
+			}
+
+			.social {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				vertical-align: middle;
+				}
+
+				.share {
+					float: right;
+					width: 25%;
+					padding: 8px;
+					padding-top: 8px;
+					text-align: right;
+				}
 }
 
 /* Custom, iPhone Retina */
