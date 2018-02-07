@@ -39,7 +39,7 @@ var inputColor = document.querySelector('.color-input').oninput = function() {ch
 function changeColor(e) {
 	var currentValue = event.target.value;
 	changeC.onclick = function () {
-		var changeBgColor = document.querySelector('body');
+		var changeBgColor = document.querySelector('.content');
 		changeBgColor.style.backgroundImage = 'none';
 		changeBgColor.style.backgroundColor = currentValue;
 	}
@@ -58,7 +58,7 @@ function changeFontFamily(e) {
 	changeFF.onclick = function() {
 		for (var i = 0; i < radioFont.length; i++) {
 			if (currentValue === radioFont[i]) {
-					document.body.style.fontFamily = FONTS[i];
+					document.querySelector('.content').style.fontFamily = FONTS[i];
 					console.log(document.body.style.fontFamily);
 			}
 		}
