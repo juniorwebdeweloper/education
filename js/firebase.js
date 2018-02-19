@@ -3,7 +3,6 @@
   const errors = document.querySelector('#errors');
   const failed = { fail: false, errors: [] };
   const userName = document.querySelector('.user-name');
-  const btnLogout = document.querySelector('#btnLogout');
   const controlPanel = document.querySelector('#cPanel');
   const loginForm = document.querySelector('#login');
   const regForm = document.querySelector('.reg-form');
@@ -119,6 +118,7 @@ function handleFormLogin() {
 }
 
 function logOut() {
+  const btnLogout = document.querySelector('#btnLogout');
   btnLogout.addEventListener('click', () => {
     firebase
     .auth()
@@ -126,6 +126,7 @@ function logOut() {
     .catch(err => {
       console.log(err);
     });
+    location.reload();
   });
 }
 })();
