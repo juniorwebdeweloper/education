@@ -110,7 +110,7 @@ function handleFormLogin() {
       event.target.elements[0].value = '';
       event.target.elements[1].value = '';
     })
-    firebase.catch(err => {
+      .catch(err => {
       errors.innerHTML = err.message;
       console.log(err);
     });
