@@ -108,6 +108,22 @@ input:hover{
  	box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
 }
 
+/*welcome div*/
+.welcome-text {
+	display: none;
+}
+
+.welcome-text .user-name {
+	padding-right: 40px;
+	text-align: center;
+}
+
+#btnLogout {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	outline: 0;
+}
+
 /*sidebar*/
 .sidebar {
 	float: left;
@@ -139,6 +155,7 @@ input:hover{
 
 /*control panel*/
 #cPanel {
+	display: none;
 	width: 78%;
 	padding: 18px 18px 0 18px;
 	margin-top: 30px;
@@ -357,6 +374,31 @@ input[type="text"],input[type="password"]{
 .text-input:hover::before{
  	color: #319ebc;
  	transition: all 0.3s;
+}
+
+/* errors */
+.error {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.error p {
+	color: #ff3d3d;
+	font-size: 18px;
+	webkit-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { color: rgb(255, 255, 255); }
+  50% { color: rgb(255, 76, 76); }
+  100% { color: rgb(255, 0, 0); }
+}
+@keyframes blink {
+  0% { color: rgb(255, 255, 255); }
+  50% { color: rgb(255, 76, 76); }
+  100% { color: rgb(255, 0, 0); }
 }
 
 /* footer */

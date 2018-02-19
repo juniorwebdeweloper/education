@@ -4,8 +4,8 @@ var span = document.getElementById('burger').getElementsByTagName('span');
 var btn = document.getElementById('burger');
 
 btn.onclick = function() {
-		slideMenu();
-		};
+	slideMenu();
+};
 
 function slideMenu() {
 	cont.classList.toggle('active');
@@ -24,8 +24,8 @@ function changeFont(e) {
 		if (currentValue >= 8 && currentValue <= 24 &&  Number.isInteger(parseFloat(currentValue))) {
 			var changeParagraph = document.querySelectorAll('.content p');
 			for (var i = 0; i < changeParagraph.length; i++) {
-					changeParagraph[i].style.fontSize = currentValue + 'px';
-				}
+				changeParagraph[i].style.fontSize = currentValue + 'px';
+			}
 		} else {
 			alert('Please write integer number from 8px to 24px!');
 		}
@@ -49,17 +49,17 @@ function changeColor(e) {
 const FONTS = ['Roboto', 'Nautilus Pompilius', 'Beer money'];
 var changeFF = document.getElementById('ch3');
 var radioFont = document.querySelectorAll('.r_button');
-		for (var i = 0; i < radioFont.length; i++) {
-			radioFont[i].onchange = () => changeFontFamily(); 
-		};
+for (var i = 0; i < radioFont.length; i++) {
+	radioFont[i].onchange = () => changeFontFamily(); 
+};
 
 function changeFontFamily(e) {
 	var currentValue = event.target;
 	changeFF.onclick = function() {
 		for (var i = 0; i < radioFont.length; i++) {
 			if (currentValue === radioFont[i]) {
-					document.querySelector('.content').style.fontFamily = FONTS[i];
-					console.log(document.body.style.fontFamily);
+				document.querySelector('.content').style.fontFamily = FONTS[i];
+				console.log(document.body.style.fontFamily);
 			}
 		}
 	}
