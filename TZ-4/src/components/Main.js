@@ -218,25 +218,31 @@ function logOut() {
 		// 	console.log('You have selected:', this.state.selectedOption);
 		// }
 
-		changeFontFamily = (e) => {
-			const FONTS = ['Roboto', 'Nautilus Pompilius', 'Beer money'];
-			var changeFF = document.getElementById('ch3');
-			var radioFont = document.querySelectorAll('.r_button');
-			for (var i = 0; i < radioFont.length; i++) {
-					radioFont[i].onChange = () => this.changeFontFamily(); 
-					};
-			var currentValue = this.event.target;
-			changeFF.onClick = function() {
-				for (var i = 0; i < radioFont.length; i++) {
-					if (currentValue === radioFont[i]) {
-						document.querySelector('.content').style.fontFamily = FONTS[i];
-						console.log(document.body.style.fontFamily);
-					}
-				}
-			}
+		// changeFontFamily = (e) => {
+			
+		// 	var changeFF = document.getElementById('ch3');
+		// 	var radioFont = document.querySelectorAll('.r_button');
+		// 	for (var i = 0; i < radioFont.length; i++) {
+		// 			radioFont[i].onChange = () => this.changeFontFamily(); 
+		// 			};
+		// 	var currentValue = this.event.target;
+		// 	changeFF.onClick = function() {
+		// 		for (var i = 0; i < radioFont.length; i++) {
+		// 			if (currentValue === radioFont[i]) {
+		// 				document.querySelector('.content').style.fontFamily = FONTS[i];
+		// 				console.log(document.body.style.fontFamily);
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		fontChange = (item) => {
+			this.content.style.fontFamily = item;
+			console.log(item);
 		}
 
 	render () {
+		const FONTS = ['Roboto', 'Nautilus Pompilius', 'Beer money'];
 		return (
 			<div className="kostil">
 			<div className="container clearfix">
@@ -344,42 +350,22 @@ function logOut() {
 							<hr />
 							<form>
 							<h3 className="h3-mb">Font changer</h3>
-							<label className="radio">
+							{FONTS.map((item, index) => {
+								return (
+								<label 
+									key={index}
+									className="radio" 
+									onClick={() => this.fontChange(item)}>
 								<input 
 									name="font" 
 									type="radio" 
 									value="Roboto" 
-									id="f1" 
 									className="r_button" 
 								/>
-								<div className="radio-text">Roboto regular</div>
+								<div className="radio-text">{item}</div>
 							</label>
-							<label className="radio">
-								<input 
-									name="font" 
-									type="radio" 
-									value="Nautilus Pompilius" 
-									id="f2" 
-									className="r_button" 
-								/>
-								<div className="radio-text">Nautilus Pompilius</div>
-							</label>
-							<label className="radio">
-								<input 
-									name="font" 
-									type="radio" 
-									value="Beer money" 
-									id="f3" 
-									className="r_button" 
-								/>
-								<div className="radio-text">Beer money</div>
-							</label>
-							<input 
-								type="submit"
-								value="Change" 
-								className="change" 
-								id="ch3"
-							/>
+							)
+							})}
 							</form>
 							<hr />
 							<h3 className="h3-mb">Delete last paragraph</h3>

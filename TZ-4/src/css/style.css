@@ -186,7 +186,7 @@ input:hover{
 
 /*control panel*/
 #cPanel {
-	display: block;
+	display: none;
 	width: 78%;
 	padding: 18px 18px 0 18px;
 	margin-top: 30px;
