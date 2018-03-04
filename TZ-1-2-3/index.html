@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My first page</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
+	<link rel="SHORTCUT ICON" href="images/favicon.ico" type="image/x-icon">
+	<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+  	apiKey: "AIzaSyCVesHby-X11H6ZDq3AdpBcUTGqUZo9FY4",
+  	authDomain: "testforweb-4142a.firebaseapp.com",
+  	databaseURL: "https://testforweb-4142a.firebaseio.com",
+  	projectId: "testforweb-4142a",
+  	storageBucket: "testforweb-4142a.appspot.com",
+  	messagingSenderId: "6543032742"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+	<header class="clearfix">
+		<div class="container clearfix">
+			<div class="logo">
+				<a href="#"><img src="images/logo_react.png" alt="react"></a>
+			</div>
+			<div class="head-cont">
+				<nav>
+					<div class="head-menu">
+						<ul class="main-menu">
+							<li><a href="">Home</a></li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Info</a></li>
+							<li><a href="">Contacts</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- login -->
+				<div class="login-form">
+					<div class="welcome-text">
+						<span class="user-name"></span>
+						<button class="sbm-input" id="btnLogout" type="button">Log Out</button>
+					</div>
+					<form name="login" action="#" id="login">
+						<div class="log">
+							<input class="text-input" id="auth_login" type="text" placeholder="email" required/>
+						</div>
+						<div class="log">
+							<input class="password-input" id="auth_password" type="password" placeholder="password" required/>
+						</div>
+						<div class="sbm">
+							<input class="sbm-input" id="auth" type="submit" value="Login"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main class="clearfix"> 
+			<div class="container">
+				<aside class="sidebar">
+					<ul class="sidebar-list">
+						<li><a href="">HTML5</a></li>
+						<li><a href="">CSS3</a></li>
+						<li><a href="">Javascript</a></li>
+						<li><a href="">React.js</a></li>
+						<li><a href="">Vue.js</a></li>
+						<li><a href="">Angular</a></li>
+					</ul>
+					<div id="cPanel">
+						<button id="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<h3 class="h3-cp">Control panel</h3>
+						<div id="cPcont">
+							<h3 class="h3-mb">Font size changer</h3>
+							<input type="text" class="font-change" placeholder="From 8px to 24px" />
+							<input type="submit" class="change" value="Change" id="ch1"/>
+							<hr>
+							<h3 class="h3-mb">Bg-Color changer</h3>
+							<input type="color" class="color-input" />
+							<input type="submit" class="change" value="Change" id="ch2"/>
+							<hr>
+							<h3 class="h3-mb">Font changer</h3>
+							<label class="radio">
+								<input name="font" type="radio" value="Roboto" id="f1" class="r_button"/>
+								<div class="radio-text">Roboto regular</div>
+							</label>
+							<label class="radio">
+								<input name="font" type="radio" value="Nautilus Pompilius" id="f2" class="r_button"/>
+								<div class="radio-text">Nautilus Pompilius</div>
+							</label>
+							<label class="radio">
+								<input name="font" type="radio" value="Beer money" id="f3" class="r_button"/>
+								<div class="radio-text">Beer money</div>
+							</label>
+							<input type="submit" value="Change" class="change" id="ch3" />
+							<hr>
+							<h3 class="h3-mb">Delete last paragraph</h3>
+							<input type="submit" value="Delete &#60;p&#62;" class="delete" id="del"/>
+						</div>
+					</div>
+				</aside>
+				<section class="content clearfix">
+					<div class="cont-item">
+						<div class="wrap-img"><img src="images/html.png" alt="html5"></div>
+						<p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.<p>
+							<p>It was published in October 2014 by the World Wide Web Consortium (W3C)to improve the language with support for the latest multimedia, while keeping it both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc. HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2</p>
+							<p>HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications. For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.</p>
+						</div>
+						<div class="cont-item">
+							<div class="wrap-img"><img src="images/css.png" alt="css"></div>
+							<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+							<p>CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+						</div>
+						<div class="cont-item">
+							<div class="wrap-img"><img src="images/js.png" alt="javascript"></div>
+							<p>JavaScript (<em>/ˈdʒɑːvəˌskrɪpt/</em>), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.</p>
+							<p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles.</p>
+						</div>
+					</section>
+					<!-- register -->
+					<div class="reg-form">
+						<img src="images/man.png">
+						<form action="#" name="register">
+							<div class="text-input">
+								<input type="text" name="username" id="register_login" placeholder="Enter login" required>
+							</div>
+							<div class="text-input">
+								<input type="text" name="email" placeholder="Enter email" required>
+							</div>
+							<div class="text-input">
+								<input type="password" name="password" id="register_password" placeholder="Enter password" required>
+							</div>
+							<div class="text-input">
+								<input type="password" name="password" id="register_confirmation" placeholder="Repeat password" required>
+							</div>
+							<div class="error">
+								<p id="errors"></p>
+							</div>
+							<input class="sbm-input" type="submit" name="submit" id="register" value="REGISTER"><br />
+							<a href="#">Restore password</a>
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer class="clearfix">
+				<div class="container">
+					<nav>
+						<div class="footer-menu">
+							<ul class="bottom-menu">
+								<li><a href="">Home</a></li>
+								<li><a href="">Info</a></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contacts</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="share">
+						<a class="social social-fb" href="https://www.facebook.com/" target="_blank"><img src="images/social_fb.png" alt="facebook" /></a>
+						<a class="social social-tw" href="https://twitter.com/" target="_blank"><img src="images/social_tw.png" alt="twitter" /></a>
+						<a class="social social-in" href="https://www.linkedin.com/" target="_blank"><img src="images/social_in.png" alt="linkedin" /></a>
+					</div>
+					<div class="copyright">
+						&copy; Zozulia Kirill - 2018
+					</div>
+				</div>
+			</footer>
+			<script src="js/script.js"></script>
+			<script src="js/firebase.js"></script>
+		</body>
+		</html>
